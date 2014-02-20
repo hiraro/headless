@@ -12,7 +12,9 @@ headless
 Eclipseプラグインプロジェクトとして構成されています（たぶん）．
 
 まず，pom.xmlがあるところでターミナルで
+
     $ mvn install
+
 してください．
 
 その後に，Eclipse（要Eclipse Plug-in Development EnvironmentなのでEclipse IDE for Java EE Developersとか）にインポートしてみてください．
