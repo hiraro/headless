@@ -2,7 +2,7 @@ headless
 ========
 
 # これはなに？
-* EclipseJDTのASTParserを使ってJavaソースコードの情報をぶっこ抜く
+* EclipseJDTのASTParserを使って指定したEclipseのJavaプロジェクトにあるソースコードの情報をぶっこ抜く
     * 識別子，コメント，リテラル
     * パッケージ，クラス，メソッド
     * メソッドのコールグラフ的なもの
@@ -22,3 +22,8 @@ Eclipseプラグインプロジェクトとして構成されています（た�
 そして，conf.properties.sampleを編集してconf.propertiesにリネームしてください．(その内容の通りにデータベース作成も)
 
 実行すると，EclipseのRun Configurations＞WorkspaceData＞Location内を見に行きます．なので，そこにconf.propertiesのtargetで指定した名前のJavaプロジェクトをおいておいてください．
+
+# 問題点
+* 重い・遅い・よく落ちるOR無限ループ
+  * 〜10k行くらいが限界
+* 使い道…
