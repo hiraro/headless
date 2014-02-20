@@ -1,0 +1,9 @@
+db.driver=com.mysql.jdbc.Driver
+db.username=%dbuser%
+db.password=%dbpassword%
+db.url=jdbc:mysql://localhost:3306/%tablename%?useUnicode=yes&characterEncoding=UTF-8
+
+target=%targetEclipseProject%
+
+#exclusion=java.util.*,java.lang.*
+#inclusion=java.util.*,java.lang.*
