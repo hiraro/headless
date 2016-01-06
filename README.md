@@ -9,21 +9,22 @@ headless
 * MySQLのデータベースにぶっこむ
 
 # 使い方
-Eclipseプラグインプロジェクトとして構成されています（たぶん）．
+Eclipseプラグインプロジェクトとして構成されています．
 
-まず，pom.xmlがあるところでターミナルで
+1. pom.xmlがあるパスにて
 
     $ mvn install
 
-してください．
 
-その後に，Eclipse（要Eclipse Plug-in Development EnvironmentなのでEclipse IDE for Java EE Developersとか）にインポートしてみてください．
+2. その後，Eclipseにインポート
+  - （要Eclipse Plug-in Development Environmentなので，Eclipse IDE for Java EE Developersとか）
 
-そして，conf.properties.sampleを編集してconf.propertiesにリネームしてください．(その内容の通りにデータベース作成も)
+3. conf.properties.sampleを編集してconf.propertiesにリネーム
+  - (その内容の通りにデータベース作成も)
 
-実行すると，EclipseのRun Configurations＞WorkspaceData＞Location内を見に行きます．なので，そこにconf.propertiesのtargetで指定した名前のJavaプロジェクトをおいておいてください．
+4. 実行すると，EclipseのRun Configurations＞WorkspaceData＞Locationのパスを探索しはじめます
+  - conf.propertiesのtargetで指定した名前のJavaプロジェクトをそこにおいておいてください
 
 # 問題点
 * 重い・遅い・よく落ちるOR無限ループ
   * 〜10k行くらいが限界
-* 使い道…
