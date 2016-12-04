@@ -11,17 +11,17 @@ headless
 # 使い方
 Eclipseプラグインプロジェクトとして構成されています．
 
-1. pom.xmlがあるパスにて
+1. pom.xml があるパスにて
 
     $ mvn install
 
-2. Eclipseにインポート
+2. Eclipse にインポート
   - 要: Eclipse Plug-in Development Environment とか m2e とか Eclipse JDT Plug-in Developer Resources とか Eclipse Java development tools など	
-3. conf.properties.sampleを編集してconf.propertiesにリネーム
+3. conf.properties.sample を編集して conf.properties へリネーム
   - データベース作成しておく
   
 4. net.umanohone.headless.application を 実行すると Eclipse の `Run Configurations＞WorkspaceData＞Location`のパスを探索しはじめます
-  - conf.propertiesのtargetで指定した名前のJavaプロジェクトをそこにおいておいてください
+  - conf.properties の target で指定した名前の Javaプロジェクト をそこにおいておいてください
 
 # 問題点
 * 重い・遅い・よく落ちるOR無限ループ
