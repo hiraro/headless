@@ -14,8 +14,9 @@ Eclipseプラグインプロジェクトとして構成されています (maven
 1. pom.xml があるパスにて `mvn install`
 
 2. Eclipse にインポート
-  - 要Eclipseプラグインインストール
-    - Eclipse Plug-in Development Environment とか m2e とか Eclipse JDT Plug-in Developer Resources とか Eclipse Java development tools など	
+    
+    - 要Eclipseプラグインインストール: Eclipse Plug-in Development Environment とか m2e とか Eclipse JDT Plug-in Developer Resources とか Eclipse Java development tools など	
+
 3. conf.properties.sample を編集して conf.properties へリネーム
   - データベース作成しておく
   
