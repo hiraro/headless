@@ -15,14 +15,12 @@ Eclipseプラグインプロジェクトとして構成されています．
 
     $ mvn install
 
-
-2. その後，Eclipseにインポート
-  - （要Eclipse Plug-in Development Environmentなので，Eclipse IDE for Java EE Developersとか）
-
+2. Eclipseにインポート
+  - 要: Eclipse Plug-in Development Environment とか m2e とか Eclipse JDT Plug-in Developer Resources とか Eclipse Java development tools など	
 3. conf.properties.sampleを編集してconf.propertiesにリネーム
-  - (その内容の通りにデータベース作成も)
-
-4. 実行すると，EclipseのRun Configurations＞WorkspaceData＞Locationのパスを探索しはじめます
+  - データベース作成しておく
+  
+4. net.umanohone.headless.application を 実行すると Eclipse の `Run Configurations＞WorkspaceData＞Location`のパスを探索しはじめます
   - conf.propertiesのtargetで指定した名前のJavaプロジェクトをそこにおいておいてください
 
 # 問題点
